@@ -1,3 +1,23 @@
+class Device {
+  int ob_x;
+  int ob_y;
+  int wp_x;
+  int wp_y;
+  void obstacle(){
+    ellipse(ob_x, ob_y, 50, 50);
+  }
+  void ob_move(){
+    ob_y = ob_y - 15;
+    wp_y = wp_y - 7;
+    
+  }
+  void warp(){
+    textSize(50);
+    text("Chance!", wp_x-50, wp_y-10);
+    rect(wp_x, wp_y, 60,60);   
+  }
+}
+
 int y=0;
 int flag=0;
 
